@@ -1,2 +1,2 @@
-import './01-array/001.js';
+import './01-array/002.js';
 console.log('Hello from index.js');
