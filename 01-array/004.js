@@ -1,17 +1,15 @@
-console.log('helloooo');
-
 // Basics of Recursion
 // Function call itself is called recursion
 // Recursion can be done only in a function and not file level or outside function
 
 // How does normal function works
-const sum = (a, b) => {
+/* const sum = (a, b) => {
   return a + b;
 };
 
 console.log('before sum call');
 console.log(sum(10, 20));
-console.log('after sum call');
+console.log('after sum call'); */
 
 // Function callling other function that calls another function
 const test4 = () => {
@@ -43,7 +41,7 @@ const test1 = () => {
   return newAns;
 };
 
-console.log(test1());
+// console.log(test1());
 
 // Print * N times without loop
 const printStar = (n) => {
@@ -120,13 +118,27 @@ const insertSorted = (arr, ele, low, high) => {
   return insertSorted(arr, ele, low, middle);
 };
 
-const arr = [10, 50, 63, 68, 79, 95, 98, 99];
-const ele = 97;
-const low = 0;
-const high = arr.length - 1;
+// const arr = [10, 50, 63, 68, 79, 95, 98, 99];
+// const ele = 97;
+// const low = 0;
+// const high = arr.length - 1;
 
-insertSorted(arr, ele, low, high);
-console.log(arr);
+// insertSorted(arr, ele, low, high);
+// console.log(arr);
 
 // Method 2
 // As the arr is already sorted, iterate one by one and insert the value
+const insertSorted2 = (arr, ele) => {
+  debugger;
+  let i = 0;
+  while (i < arr.length) {
+    if (arr[i] < ele) break;
+    i++;
+  }
+  arr.splice(i, 0, ele);
+};
+
+const arr = [10, 50, 63, 68, 79, 95, 98, 99];
+const ele = 97;
+// insertSorted2(arr, ele);
+console.log(arr);
