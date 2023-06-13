@@ -129,16 +129,15 @@ const insertSorted = (arr, ele, low, high) => {
 // Method 2
 // As the arr is already sorted, iterate one by one and insert the value
 const insertSorted2 = (arr, ele) => {
-  debugger;
   let i = 0;
   while (i < arr.length) {
-    if (arr[i] < ele) break;
+    if (arr[i] >= ele) break;
     i++;
   }
   arr.splice(i, 0, ele);
 };
 
 const arr = [10, 50, 63, 68, 79, 95, 98, 99];
-const ele = 97;
-// insertSorted2(arr, ele);
+const ele = 5;
+insertSorted2(arr, ele);
 console.log(arr);
