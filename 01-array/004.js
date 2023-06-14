@@ -137,7 +137,7 @@ const insertSorted2 = (arr, ele) => {
   arr.splice(i, 0, ele);
 };
 
-const arr = [10, 50, 63, 68, 79, 95, 98, 99];
-const ele = 5;
-insertSorted2(arr, ele);
-console.log(arr);
+// const arr = [10, 50, 63, 68, 79, 95, 98, 99];
+// const ele = 97;
+// insertSorted2(arr, ele);
+// console.log(arr);
