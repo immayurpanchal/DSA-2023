@@ -6,3 +6,6 @@
 [004 How to search, insert, and delete in an sorted array.](./01-array/004.js)
 [005 Program to find the minimum (or maximum) element of an array](./01-array/005.js)
 [006 Last duplicate element in a sorted array](./01-array/006.js)
+
+### Linked List 
+[001 Create LinkedList](./02-LL/001.js)
