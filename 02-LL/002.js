@@ -163,8 +163,11 @@ ll.append(40);
 ll.append(50);
 ll.print();
 
+// Method 1
+// Storing values in an array and search there
+/*
 // key to search
-const key = 30;
+const key = 10;
 
 // create copy of head to traverse
 let temp = ll.head;
@@ -182,5 +185,7 @@ if (v.includes(key)) {
 } else {
   console.log('NO');
 }
+*/
 
-// ll.search();
+// Method 2
+// Implement search function in class itself that returns boolean
