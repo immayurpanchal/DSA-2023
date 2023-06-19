@@ -7,5 +7,7 @@
 [005 Program to find the minimum (or maximum) element of an array](./01-array/005.js)
 [006 Last duplicate element in a sorted array](./01-array/006.js)
 
-### Linked List 
+### Linked List
+
 [001 Create LinkedList](./02-LL/001.js)
+[002 Search Element in a LL, Iterative and Recursive](./02-LL/002.js)
