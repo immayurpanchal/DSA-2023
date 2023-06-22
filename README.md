@@ -16,3 +16,4 @@
 [005 Create Circular Doubly Linked List without this.tail](./02-LL/005.js)
 [006 Create Circular Doubly Linked List using this.tail](./02-LL/006.js)
 [007 Create Header Linked List](./02-LL/007.js)
+[008 Basic Operations in Linked List](./02-LL/007.js)
