@@ -1,5 +1,5 @@
 // Find the length of the linked list
-// Iterative Approach
+// Iterative & Recursive Approach
 // Node class to represent individual nodes in the linked list
 class Node {
   constructor(data) {
@@ -57,6 +57,54 @@ class LinkedList {
     // Recursively call the function on the next node and add 1 to the result
     return 1 + this.findLengthRecursive(node.next);
   }
+
+  // Function to reverse a LinkedList
+  reverseLinkedList(head) {
+    let prevNode = null;
+    let currentNode = head;
+    let nextNode = null;
+
+    while (currentNode !== null) {
+      nextNode = currentNode.next; // Save the next node
+      currentNode.next = prevNode; // Reverse the pointer
+
+      prevNode = currentNode; // Move the pointers to the next nodes
+      currentNode = nextNode;
+    }
+
+    // Change original linked list head
+    this.head = prevNode;
+
+    // OR Return the new head of the reversed LinkedList
+    // return prevNode;
+  }
+
+  // Function to find the middle of a linked list
+  findMiddle() {
+    if (this.head === null) {
+      return null;
+    }
+
+    let slowPtr = this.head;
+    let fastPtr = this.head;
+
+    while (fastPtr !== null && fastPtr.next !== null) {
+      slowPtr = slowPtr.next;
+      fastPtr = fastPtr.next.next;
+    }
+
+    return slowPtr;
+  }
+
+  // Function to display the linked list
+  display() {
+    let currentNode = this.head;
+
+    while (currentNode !== null) {
+      console.log(currentNode.data);
+      currentNode = currentNode.next;
+    }
+  }
 }
 
 // Create a new Linked List object
@@ -64,11 +112,23 @@ const myList = new LinkedList();
 
 // Add nodes to the list
 myList.addNode(5);
-myList.addNode(10);
+myList.addNode(100);
 myList.addNode(15);
+myList.addNode(20);
+myList.addNode(25);
 
 // Find the length of the linked list
 const length = myList.findLength();
 console.log('Length of the linked list iterative approach:', length); // Output: 3
 const recursiveLength = myList.findLengthRecursive(myList.head);
 console.log('Length of the linked list recursive approach:', recursiveLength); // Output: 3
+
+console.log('Before Reverse');
+myList.display();
+
+console.log('After Reverse');
+myList.reverseLinkedList(myList.head);
+myList.display();
+
+// Find the middle of the linked list
+console.log(myList.findMiddle());
