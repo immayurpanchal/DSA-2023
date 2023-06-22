@@ -131,4 +131,11 @@ myList.reverseLinkedList(myList.head);
 myList.display();
 
 // Find the middle of the linked list
+// Approach 1 - Create an array and store the elements in array of Linked List
+// then return size / 2 item of the array
+
+// Approach 2 - iterate through entire list to get the size
+// then iterate again but now size / 2 and return the element
+
+// Approach 3 - slow and fast pointers
 console.log(myList.findMiddle());
