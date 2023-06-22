@@ -13,4 +13,6 @@
 [002 Search Element in a LL, Iterative and Recursive](./02-LL/002.js)
 [003 Create Doubly Linked List](./02-LL/003.js)
 [004 Create Circular Singly Linked List](./02-LL/004.js)
-[005 Create Circular Doubly Linked List](./02-LL/005.js)
+[005 Create Circular Doubly Linked List without this.tail](./02-LL/005.js)
+[006 Create Circular Doubly Linked List using this.tail](./02-LL/006.js)
+[007 Create Header Linked List](./02-LL/007.js)
