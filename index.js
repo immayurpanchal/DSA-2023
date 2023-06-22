@@ -1,1 +1,1 @@
-import './02-LL/005.js';
+import './02-LL/006.js';
