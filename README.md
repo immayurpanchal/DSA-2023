@@ -20,3 +20,5 @@
 
 # Sorting 
 [001 Bubble Sort](./03-Sorting/001.js)
+[002 Selection Sort](./03-Sorting/002.js)
+[003 Insertion Sort](./03-Sorting/003.js)
