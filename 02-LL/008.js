@@ -96,6 +96,15 @@ class LinkedList {
     return slowPtr;
   }
 
+  // print Nth node from last
+  printNthFromLast(start, n){
+    if(start === null){
+      return;
+    }
+
+    const ans = printNthFromLast(start.next, --n)
+
+  }
   // Function to display the linked list
   display() {
     let currentNode = this.head;
