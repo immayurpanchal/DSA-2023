@@ -28,7 +28,7 @@ function insertionSort(arr) {
 
 // Example usage:
 const numbers = [5, 3, 8, 4, 2];
-console.log("Insertion Original array:", numbers);
+console.log('Insertion Original array:', numbers);
 
 const sortedNumbers = insertionSort(numbers);
-console.log("Sorted array:", sortedNumbers);
+console.log('Sorted array:', sortedNumbers);
