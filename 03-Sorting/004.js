@@ -44,65 +44,67 @@ const right5 = [20, 30, 50, 70, 90];
 const ans = mergeArr(left, right);
 // console.log(ans);
 
-// Merge 2 sorted sub parts of a single arr
-const merge = (arr, start, mid, end) => {
-  const leftSize = mid - start + 1;
-  const rightSize = end - mid;
-
-  // Create temporary arrays to store the left and right halves
-  const left = new Array(leftSize);
-  const right = new Array(rightSize);
-
-  // Copy data from the original array to the temporary arrays
-  for (let i = 0; i < leftSize; i++) {
-    left[i] = arr[start + i];
-  }
-  for (let j = 0; j < rightSize; j++) {
-    right[j] = arr[mid + 1 + j];
+function mergeSort(arr) {
+  // Base case: return if the array has 0 or 1 element
+  if (arr.length <= 1) {
+    return arr;
   }
 
-  let i = 0; // Index for the left subarray
-  let j = 0; // Index for the right subarray
-  let k = start; // Index for the merged subarray
+  // Find the middle index of the array
+  const mid = Math.floor(arr.length / 2);
 
-  // Merge the left and right subarrays in-place
-  while (i < leftSize && j < rightSize) {
-    if (left[i] <= right[j]) {
-      arr[k] = left[i];
-      i++;
+  // Divide the array into two halves
+  const left = arr.slice(0, mid);
+  const right = arr.slice(mid);
+
+  // Recursively sort the left and right halves
+  const sortedLeft = mergeSort(left);
+  const sortedRight = mergeSort(right);
+
+  // Merge the sorted left and right halves
+  return mergeArr(sortedLeft, sortedRight);
+}
+
+function merge(left, right) {
+  let result = [];
+  let leftIndex = 0;
+  let rightIndex = 0;
+
+  // Compare elements from the left and right arrays
+  while (leftIndex < left.length && rightIndex < right.length) {
+    if (left[leftIndex] < right[rightIndex]) {
+      // Add the smaller element to the result array
+      result.push(left[leftIndex]);
+      leftIndex++;
     } else {
-      arr[k] = right[j];
-      j++;
+      result.push(right[rightIndex]);
+      rightIndex++;
     }
-    k++;
   }
 
-  // Copy the remaining elements from the left subarray
-  while (i < leftSize) {
-    arr[k] = left[i];
-    i++;
-    k++;
+  // Add the remaining elements from the left array
+  while (leftIndex < left.length) {
+    result.push(left[leftIndex]);
+    leftIndex++;
   }
 
-  // Copy the remaining elements from the right subarray
-  while (j < rightSize) {
-    arr[k] = right[j];
-    j++;
-    k++;
-  }
-};
-
-const mergeSort = (arr, start, end) => {
-  const middle = Math.floor((start + end) / 2);
-  if (start > end) {
-    return;
+  // Add the remaining elements from the right array
+  while (rightIndex < right.length) {
+    result.push(right[rightIndex]);
+    rightIndex++;
   }
 
-  mergeSort(arr, 0, middle);
-  mergeSort(arr, middle + 1, end);
+  // Return the merged and sorted array
+  return result;
+}
 
-  merge(arr, 0, middle, end);
-};
+// Example usage:
+const numbers = [5, 3, 8, 4, 2];
+console.log('Merge Sort Original array:', numbers);
+
+const sortedNumbers = mergeSort(numbers);
+console.log('Sorted array:', sortedNumbers);
 
 const arr = [9, 7, 5, 3, 1, 2, 4, 8, 6];
 // mergeSort(arr, 0, arr.length - 1)
+console.log(arr);
