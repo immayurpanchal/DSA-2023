@@ -18,8 +18,10 @@
 [007 Create Header Linked List](./02-LL/007.js)
 [008 Basic Operations in Linked List](./02-LL/007.js)
 
-# Sorting 
+# Sorting
+
 [001 Bubble Sort](./03-Sorting/001.js)
 [002 Selection Sort](./03-Sorting/002.js)
 [003 Insertion Sort](./03-Sorting/003.js)
-[004 Quick Sort](./03-Sorting/004.js)
+[004 Merge Sort](./03-Sorting/004.js)
+[005 Quick Sort](./03-Sorting/005.js)
