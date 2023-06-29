@@ -33,18 +33,25 @@ console.log('Insertion Original array:', numbers);
 const sortedNumbers = insertionSort(numbers);
 console.log('Sorted array:', sortedNumbers);
 
-const insertion = () => {
-  for(){
-  
+/* const insertion = (arr) => {
+  for (let j = 0; j < arr.length; j++) {
+    const currentElement = arr[j];
+    let i = j - 1;
+
+    // shift element to right until you find the exact location
+    // or reach the start
+    while (arr[i] > currentElement && i >= 0) {
+      arr[i + 1] = arr[i];
+      i--;
+    }
+
+    // insert the element at the index
+    // this will fail when index is 0
+    arr[i + 1] = currentElement;
   }
-  // shift element to right until you find the exact location 
-  // or reach the start
-  while(arr[i] > currentElement && i >= 0){
-    arr[i + 1] = arr[i]
-    i--
-  }
-  
-  // insert the element at the index
-  // this will fail when index is 0 
-  arr[i] = currentElement
-}
+};
+
+const num = [5, 3, 8, 4, 2];
+insertion(num);
+console.log(num);
+ */
