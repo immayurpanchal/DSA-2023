@@ -32,3 +32,23 @@ console.log('Insertion Original array:', numbers);
 
 const sortedNumbers = insertionSort(numbers);
 console.log('Sorted array:', sortedNumbers);
+
+const insertion = (arr) => {
+  for (let i = 1; i < arr.length; i++) {
+    let currentElement = arr[i];
+    let j = i - 1;
+
+    // if element is larger then shift to right
+    while (arr[i] > currentElement && j > 0) {
+      arr[i + 1] = arr[i];
+      j--;
+    }
+
+    // insert the element at i + 1 index
+    arr[i + 1] = currentElement;
+  }
+};
+
+const num = [5, 3, 8, 4, 2];
+// insertion(num);
+console.log(num);
