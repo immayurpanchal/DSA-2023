@@ -108,3 +108,29 @@ console.log('Sorted array:', sortedNumbers);
 const arr = [9, 7, 5, 3, 1, 2, 4, 8, 6];
 // mergeSort(arr, 0, arr.length - 1)
 console.log(arr);
+
+/* const mSort = (arr) => {
+  // because this is recursion, let's add base case
+  // you're dividing the arr in half in every recursion
+  if (arr.length <= 1) {
+    return arr;
+  }
+
+  // find the middle
+  const mid = Math.floor(arr.length / 2);
+
+  // divide the array in two halfs
+  const left = arr.slice(0, mid);
+  const right = arr.slice(mid);
+
+  // hey recursion please sort left arr
+  const sortedLeft = mSort(left);
+  // hey recursion please sort right arr
+  const sortedRight = mSort(right);
+
+  // merge sorted array
+  return mergeArr(sortedLeft, sortedRight);
+};
+
+const a = [4,3,6,5,8,1,2]
+console.log(mSort(a)) */
