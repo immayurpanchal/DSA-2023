@@ -1,1 +1,1 @@
-import './04-Stack/001.js';
+import './05-Queue/001.js';

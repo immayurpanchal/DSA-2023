@@ -35,11 +35,6 @@ class Stack {
     return this.items.length === 0;
   }
 
-  // Return the size of the stack
-  size() {
-    return this.items.length;
-  }
-
   // Clear the stack
   clear() {
     this.items = [];
