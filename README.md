@@ -25,3 +25,11 @@
 [003 Insertion Sort](./03-Sorting/003.js)
 [004 Merge Sort](./03-Sorting/004.js)
 [005 Quick Sort](./03-Sorting/005.js)
+
+# Stack 
+[001 Stack using Array ](./04-Stack/001.js)
+[002 Stack using Linked List ](./04-Stack/002.js)
+
+# Queue 
+[001 Queue using Array ](./05-Queue/001.js)
+[002 Queue using Linked List ](./05-Queue/002.js)
