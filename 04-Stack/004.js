@@ -1,6 +1,7 @@
 import { StackLL } from './002';
 import { Stack } from './001';
 
+// Method 1.1
 // Reverse a string using a Stack implemented with a singly linked list
 function reverseStringStackLL(str) {
   // Create a new StackLL instance
@@ -21,6 +22,7 @@ function reverseStringStackLL(str) {
   return reversedStr;
 }
 
+// Method 1.2
 // Reverse a string using a Stack implemented with a singly linked list
 function reverseStringStack(str) {
   // Create a new StackLL instance
@@ -45,3 +47,8 @@ console.log(reverseStringStackLL('hello')); // Output: 'olleh'
 console.log(reverseStringStackLL('world')); // Output: 'dlrow'
 console.log(reverseStringStack('hello')); // Output: 'olleh'
 console.log(reverseStringStack('world')); // Output: 'dlrow'
+
+// Method 2
+const str = 'Hello';
+const ans = str.split('').reverse().join('');
+console.log(ans);
