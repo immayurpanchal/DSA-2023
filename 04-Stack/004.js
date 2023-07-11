@@ -24,7 +24,7 @@ function reverseStringStackLL(str) {
 // Reverse a string using a Stack implemented with a singly linked list
 function reverseStringStack(str) {
   // Create a new StackLL instance
-  const stack = new StackLL();
+  const stack = new Stack();
 
   // Push each character of the input string onto the stack
   for (let i = 0; i < str.length; i++) {
