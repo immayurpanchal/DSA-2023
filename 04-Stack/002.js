@@ -6,7 +6,7 @@ class Node {
   }
 }
 
-class Stack {
+export class StackLL {
   constructor() {
     this.top = null;
     this.size = 0;
@@ -55,10 +55,10 @@ class Stack {
     this.size = 0;
   }
 }
+/*
+const stack = new StackLL();
 
-const stack = new Stack();
-
-// Test push method
+ // Test push method
 stack.push(1);
 stack.push(2);
 stack.push(3);
@@ -83,3 +83,4 @@ console.log(stack.getSize()); // Output: 2
 stack.clear();
 console.log(stack.getSize()); // Output: 0
 console.log(stack.isEmpty()); // Output: true
+ */

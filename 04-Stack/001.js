@@ -41,7 +41,7 @@ export class Stack {
   }
 }
 
-const stack = new Stack();
+/* const stack = new Stack();
 
 // Test push method
 stack.push(1);
@@ -68,3 +68,4 @@ console.log(stack.getSize()); // Output: 2
 stack.clear();
 console.log(stack.getSize()); // Output: 0
 console.log(stack.isEmpty()); // Output: true
+ */

@@ -31,7 +31,8 @@
 [001 Stack using Array ](./04-Stack/001.js)
 [002 Stack using Linked List ](./04-Stack/002.js)
 [003 Monotonic Increasing/Decreasing Stack ](./04-Stack/003.js)
-[004 Next Greater Element](./04-Stack/004.js)
+[004 Reverse a string using Stack](./04-Stack/004.js)
+[005 Next Greater Element](./04-Stack/004.js)
 
 # Queue
 
